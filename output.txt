@@ -1,0 +1,27 @@
+=== 0. Abstract parent ===
+TypeError: LibraryItem is abstract and cannot be created directly.
+
+=== 1. Borrowing ===
+Alice borrowed: Book: Python 101 by A. Rao (ID 1)
+Could not borrow: 'Python 101' is already borrowed.
+
+=== 2. More error handling ===
+Bob borrowed: Magazine: Tech Monthly, issue 42 (ID 2)
+Could not borrow: Bob has reached the limit of 1 item(s).
+Could not return: Alice has not borrowed 'Inception'.
+Alice returned 'Python 101'. Late fee: Rs 6
+Alice's items: []
+Bob's items: ['Tech Monthly']
+
+=== 3. Polymorphism ===
+Book: Python 101 by A. Rao (ID 1) -> late fee for 3 days: Rs 6
+Magazine: Tech Monthly, issue 42 (ID 2) -> late fee for 3 days: Rs 3
+DVD: Inception, 148 min (ID 3) -> late fee for 3 days: Rs 15
+
+=== 4. Class attribute ===
+Total items created: 3
+
+=== 5. Encapsulation ===
+AttributeError: 'Book' object has no attribute '__available'
+Via is_available(): True
+Magazine available? False
